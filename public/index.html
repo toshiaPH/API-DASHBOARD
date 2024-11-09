@@ -9,194 +9,117 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 py-8 px-4">
+<body class="bg-gray-800 text-gray-200">
 
-    <div class="max-w-screen-xl mx-auto">
-        <h1 class="text-4xl text-white font-semibold text-center mb-12 tracking-wide">ZCDSPH API Dashboard</h1>
+    <div class="max-w-screen-xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl text-white font-extrabold leading-tight tracking-wide mb-4">ZCDSPH API Dashboard</h1>
+            <p class="text-lg text-gray-300">A collection of powerful APIs for social media, video downloads, and AI tools.</p>
+        </header>
 
-        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">Video/Content APIs</div>
+        <section class="mb-16">
+            <h2 class="text-3xl text-blue-500 font-semibold text-center mb-8">Video/Content APIs</h2>
 
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">GEOMETRY DASH RANDOM VIDEO API</h2>
-            <p class="text-gray-300 mb-6">Retrieve random gameplay videos from Geometry Dash sourced from TikTok. Explore exciting gameplays shared by the community!</p>
-            <div class="text-center">
-                <a href="/api/gd" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/gd
-                </a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">GEOMETRY DASH RANDOM VIDEO API</h3>
+                    <p class="text-gray-300 mb-4">Retrieve random gameplay videos from Geometry Dash sourced from TikTok. Explore exciting gameplays shared by the community!</p>
+                    <div class="text-center">
+                        <a href="/api/gd" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">RANDOM EDIT VIDEO API</h3>
+                    <p class="text-gray-300 mb-4">Access a random selection of video edits, including motion graphics and content-based edits from popular apps like Alight Motion.</p>
+                    <div class="text-center">
+                        <a href="/api/edit" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">TIKTOK DOWNLOADER API</h3>
+                    <p class="text-gray-300 mb-4">Download TikTok videos directly using the video URL for offline access.</p>
+                    <div class="text-center">
+                        <a href="/api/tikdl?url=" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">FACEBOOK VIDEO DOWNLOADER API</h3>
+                    <p class="text-gray-300 mb-4">Download Facebook or Facebook Reels videos using their URLs with ease.</p>
+                    <div class="text-center">
+                        <a href="/api/fbdl?url=" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">YOUTUBE DOWNLOADER API</h3>
+                    <p class="text-gray-300 mb-4">Use this API to download YouTube videos through their URL for offline viewing.</p>
+                    <div class="text-center">
+                        <a href="/api/yt?url=" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">RANDOM EDIT VIDEO API</h2>
-            <p class="text-gray-300 mb-6">Access a random selection of video edits, including motion graphics and content-based edits from popular apps like Alight Motion.</p>
-            <div class="text-center">
-                <a href="/api/edit" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/edit
-                </a>
+        <section class="mb-16">
+            <h2 class="text-3xl text-blue-500 font-semibold text-center mb-8">Social Media APIs</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">TIKTOK SEARCH API</h3>
+                    <p class="text-gray-300 mb-4">Search TikTok videos based on hashtags or specific keywords. Find popular content in seconds!</p>
+                    <div class="text-center">
+                        <a href="/api/tiktok/searchvideo?keywords=" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">INSTAGRAM STALK API</h3>
+                    <p class="text-gray-300 mb-4">Access Instagram profiles by username to view photos, videos, and other publicly available information.</p>
+                    <div class="text-center">
+                        <a href="/api/instagram/stalk?ig=" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">PINTEREST API</h3>
+                    <p class="text-gray-300 mb-4">Search Pinterest images based on a title or keyword to discover creative content.</p>
+                    <div class="text-center">
+                        <a href="/api/pin?title=wallpaper&count=10" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TIKTOK DOWNLOADER API</h2>
-            <p class="text-gray-300 mb-6">Download TikTok videos directly using the video URL for offline access.</p>
-            <div class="text-center">
-                <a href="/api/tikdl?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/tikdl?url=your video link from TikTok
-                </a>
+        <section class="mb-16">
+            <h2 class="text-3xl text-blue-500 font-semibold text-center mb-8">AI-Related APIs</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">GPT API</h3>
+                    <p class="text-gray-300 mb-4">Interact with GPT-3.5 for text-based responses. You can ask anything and get intelligent answers.</p>
+                    <div class="text-center">
+                        <a href="/api/gpt?prompt=" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105">
+                    <h3 class="text-xl text-blue-400 font-semibold mb-4">AI API</h3>
+                    <p class="text-gray-300 mb-4">A simple AI for answering questions. Use it to ask anything and receive responses instantly.</p>
+                    <div class="text-center">
+                        <a href="/api/ai?query=" class="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-bold hover:bg-blue-500 transition-colors">TRY IT</a>
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </section>
 
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">FACEBOOK VIDEO DOWNLOADER API</h2>
-            <p class="text-gray-300 mb-6">Download Facebook or Facebook Reels videos using their URLs with ease.</p>
-            <div class="text-center">
-                <a href="/api/fbdl?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/fbdl?url=your video link from Facebook
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">YOUTUBE DOWNLOADER API</h2>
-            <p class="text-gray-300 mb-6">Use this API to download YouTube videos through their URL for offline viewing.</p>
-            <div class="text-center">
-                <a href="/api/yt?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/yt?url=your video link from YouTube
-                </a>
-            </div>
-        </div>
-
-        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">Social Media APIs</div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TIKTOK SEARCH API</h2>
-            <p class="text-gray-300 mb-6">Search TikTok videos based on hashtags or specific keywords. Find popular content in seconds!</p>
-            <div class="text-center">
-                <a href="/api/tiktok/searchvideo?keywords=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/tiktok/searchvideo?keywords=
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TIKTOK STALK API</h2>
-            <p class="text-gray-300 mb-6">Explore TikTok users' profiles by their unique IDs. Get details about their videos and activities.</p>
-            <div class="text-center">
-                <a href="/api/tikstalk?unique_id=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/tikstalk?unique_id=
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">INSTAGRAM STALK API</h2>
-            <p class="text-gray-300 mb-6">Access Instagram profiles by username to view photos, videos, and other publicly available information.</p>
-            <div class="text-center">
-                <a href="/api/instagram/stalk?ig=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/instagram/stalk?ig=
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">PINTEREST API</h2>
-            <p class="text-gray-300 mb-6">Search Pinterest images based on a title or keyword to discover creative content.</p>
-            <div class="text-center">
-                <a href="/api/pin?title=wallpaper&count=10" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/pin?title=wallpaper&count=15
-                </a>
-            </div>
-        </div>
-
-        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">AI-Related APIs</div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">GPT API</h2>
-            <p class="text-gray-300 mb-6">Interact with GPT-3.5 for text-based responses. You can ask anything and get intelligent answers.</p>
-            <div class="text-center">
-                <a href="/api/gpt?prompt=hello" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/gpt?prompt=hello
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">AI API</h2>
-            <p class="text-gray-300 mb-6">A simple AI for answering questions. Use it to ask anything and receive responses instantly.</p>
-            <div class="text-center">
-                <a href="/api/ai?query=hi" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/ai?query=hi
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">GLOBAL GPT API</h2>
-            <p class="text-gray-300 mb-6">Access a global version of GPT-3.5 for more advanced interactions and responses.</p>
-            <div class="text-center">
-                <a href="/api/globalgpt?content=hello" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/globalgpt?content=hello
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">LLAMA AI API</h2>
-            <p class="text-gray-300 mb-6">Meta's Llama AI to assist with complex queries via FastAPI in Python.</p>
-            <div class="text-center">
-                <a href="https://apisdashboardzcdsph.onrender.com/meta?prompt=hello" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /meta?prompt=hello
-                </a>
-            </div>
-        </div>
-
-        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">URL & Image APIs</div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TINYURL API</h2>
-            <p class="text-gray-300 mb-6">Shorten any URL for easy sharing using the popular TinyURL service.</p>
-            <div class="text-center">
-                <a href="/api/tinyurl?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /api/tinyurl?url=
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">LEAVE CARD CANVAS API</h2>
-            <p class="text-gray-300 mb-6">Create a custom leave card for a user who left from a group, with personalized details.</p>
-            <div class="text-center">
-                <a href="https://apisdashboardzcdsph.onrender.com/leave?name=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /leave?name=&id=&background=your background
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">WELCOME CARD CANVAS API</h2>
-            <p class="text-gray-300 mb-6">Generate a welcome card for users who join a group, with customizable background and name.</p>
-            <div class="text-center">
-                <a href="https://apisdashboardzcdsph.onrender.com/?name=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /join2?name=eh&id=&background=your background
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
-            <h2 class="text-2xl text-cyan-400 font-medium mb-4">RANKUP CARD CANVAS API</h2>
-            <p class="text-gray-300 mb-6">Create a custom rank-up card showing user rank, progress, and XP.</p>
-            <div class="text-center">
-                <a href="https://apisdashboardzcdsph.onrender.com/rankCard?name=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
-                    Try it: /rankCard?name=cutieee&level=Level20&currentXp=589
-                </a>
-            </div>
-        </div>
-
-        <footer class="bg-gray-800 text-gray-300 text-center py-6 mt-12 rounded-lg">
+        <footer class="bg-gray-700 text-gray-300 text-center py-6 mt-12 rounded-lg">
             <p>&copy; 2024 ZCDSPH API Dashboard | Created by Marjhun Baylon</p>
-            <p><a href="https://marjhun.fun" class="text-pink-500 hover:text-cyan-400">Visit Website</a></p>
+            <p><a href="https://marjhun.fun" class="text-blue-500 hover:text-blue-300">Visit Website</a></p>
         </footer>
-
     </div>
 
 </body>
