@@ -1,157 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>API JONELL MAGALLANES</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZCDSPH API Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="loading-overlay" id="loadingOverlay" style="display: none;">
-    <div class="loading-spinner"></div>
-    <p>Redirecting, please wait...</p>
-  </div>
 
-  <header>
-    <h1>JONELL CC API</h1>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <div class="menu-content" id="menuContent">
-      <div class="menu-item" onclick="navigate('/login')">Login</div>
-      <div class="menu-item" onclick="navigate('/commands')">Commands</div>
-    </div>
-  </header>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 py-8 px-4">
 
-  <main>
-    <div class="endpoint-container">
-      <h2>GEOMETRY DASH RANDOM VIDEO API</h2>
-      <p>This Api link route is related geometry dash random video gameplays from TikTok video. Fire in the hole...</p>
-      <p>Example usage: <a href="/api/gd" onclick="showLoading()">/api/gd</a></p>
-    </div>
-    <div class="endpoint-container">
-      <h2>RANDOM EDIT VIDEO API</h2>
-      <p>This Api Link route is a random video of edit like preset alightmotion and content related edits</p>
-      <p>Example usage: <a href="/api/edit" onclick="showLoading()">/api/edit</a></p>
-    </div>
-    <div class="endpoint-container">
-      <h2>GPT X PINTEREST API</h2>
-      <p>This API Based On The GPT-3.5 Turbo Model Also Every Response with Image depende your question</p>
-      <p>Example usage: <a href="/api/gpt2?prompt=helll" onclick="showLoading()">/api/gpt2?prompt=your question</a></p>
-    </div>
-    <div class="endpoint-container">
-      <h2>GPT API</h2>
-      <p>This API Based On The GPT-3.5 Turbo Model Text Based</p>
-      <p>Example usage: <a href="/api/gpt?prompt=hello" onclick="showLoading()">/api/gpt?prompt=your question</a></p>
-    </div>
+    <div class="max-w-screen-xl mx-auto">
+        <h1 class="text-4xl text-white font-semibold text-center mb-12 tracking-wide">ZCDSPH API Dashboard</h1>
 
-    <div class="endpoint-container">
-      <h2>TIKTOK SEARCH API</h2>
-      <p>This Api Route Link Is a to search the TikTok Videos Based on hashtags or title of contents</p>
-      <p>Example usage: <a href="/api/tiktok/searchvideo?keywords=" onclick="showLoading()">/api/tiktok/searchvideo?keywords=</a></p>
-    </div>
+        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">Video/Content APIs</div>
 
-        <div class="endpoint-container">
-      <h2>TINYURL API</h2>
-      <p>This routes api link is a popular shortner link call tinyurl to short yours link and efficient</p>
-      <p>Example usage: <a href="/api/tinyurl?url=" onclick="showLoading()">/api/tinyurl?url=</a></p>
-        </div>
-
-    <div class="endpoint-container">
-      <h2>AI API</h2>
-      <p>Simple API AI Can ask Anything!</p>
-      <p>Example usage: <a href="/api/ai?query=hi" onclick="showLoading()">/api/ai?query=hi</a></p>
-    </div>
-
-    <div class="endpoint-container">
-      <h2>TIKTOK STALK API</h2>
-      <p>This route api to ability to stalk the profile of TikTok Users</p>
-      <p>Example usage: <a href="/api/tikstalk?unique_id=" onclick="showLoading()">/api/tikstalk?unique_id=</a></p>
-    </div>
-
-        <div class="endpoint-container">
-      <h2>INSTAGRAM STALK API</h2>
-      <p>This route api to ability to stalk the profile of Instagram Users using username</p>
-      <p>Example usage: <a href="/api/instagram/stalk?ig=" onclick="showLoading()">/api/instagram/stalk?ig=</a></p>
-        </div>
-
-            <div class="endpoint-container">
-      <h2>FACEBOOK VIDEO DOWNLOADER API</h2>
-      <p>This route API is to ability to download video from Facebook or Facebook Reels</p>
-      <p>Example usage: <a href="/api/fbdl?url=" onclick="showLoading()">/api/fbdl?url=your url video facebook</a></p>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">GEOMETRY DASH RANDOM VIDEO API</h2>
+            <p class="text-gray-300 mb-6">Retrieve random gameplay videos from Geometry Dash sourced from TikTok. Explore exciting gameplays shared by the community!</p>
+            <div class="text-center">
+                <a href="/api/gd" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/gd
+                </a>
             </div>
-
-            <div class="endpoint-container">
-      <h2>TIKTOK DOWNLOADER API</h2>
-      <p>This route API to ability to download the video from TikTok video with link video</p>
-      <p>Example usage: <a href="/api/tikdl?url=" onclick="showLoading()">/api/tikdl?url= your video link video from TikTok</a></p>
         </div>
 
-                <div class="endpoint-container">
-      <h2>YOUTUBE DOWNLOADER API</h2>
-      <p>This route API to ability to download the video from Youtube video with link video</p>
-      <p>Example usage: <a href="/api/yt?url=" onclick="showLoading()">/api/yt?url= your video link video from youtube</a></p>
-                </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">RANDOM EDIT VIDEO API</h2>
+            <p class="text-gray-300 mb-6">Access a random selection of video edits, including motion graphics and content-based edits from popular apps like Alight Motion.</p>
+            <div class="text-center">
+                <a href="/api/edit" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/edit
+                </a>
+            </div>
+        </div>
 
-                <div class="endpoint-container">
-      <h2>TWITTER DOWNLOADER API</h2>
-      <p>This route API to ability to download the video from Twitter video with link video</p>
-      <p>Example usage: <a href="/api/tikdl?url=" onclick="showLoading()">/api/twitter?url= your video link video from from Twitter</a></p>
-                </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TIKTOK DOWNLOADER API</h2>
+            <p class="text-gray-300 mb-6">Download TikTok videos directly using the video URL for offline access.</p>
+            <div class="text-center">
+                <a href="/api/tikdl?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/tikdl?url=your video link from TikTok
+                </a>
+            </div>
+        </div>
 
-    <div class="endpoint-container">
-      <h2>YOUTUBE DOWNLOADER API</h2>
-      <p>This route API to ability to download the video from Youtube video with link video</p>
-      <p>Example usage: <a href="/api/yt?url=" onclick="showLoading()">/api/yt?url= your video link video from youtube</a></p>
-                </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">FACEBOOK VIDEO DOWNLOADER API</h2>
+            <p class="text-gray-300 mb-6">Download Facebook or Facebook Reels videos using their URLs with ease.</p>
+            <div class="text-center">
+                <a href="/api/fbdl?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/fbdl?url=your video link from Facebook
+                </a>
+            </div>
+        </div>
 
-                <div class="endpoint-container">
-      <h2>PINTEREST API</h2>
-      <p>This route API to ability to Search the images from Pinterest</p>
-      <p>Example usage: <a href="/api//pin?title=wallpaper&count=10" onclick="showLoading()">/api/pin?title=wallpaper&count=15
-</a></p>
-                </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">YOUTUBE DOWNLOADER API</h2>
+            <p class="text-gray-300 mb-6">Use this API to download YouTube videos through their URL for offline viewing.</p>
+            <div class="text-center">
+                <a href="/api/yt?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/yt?url=your video link from YouTube
+                </a>
+            </div>
+        </div>
 
-                          <div class="endpoint-container">
-      <h2>AI X PINTEREST API</h2>
-      <p>This route can send response with image from Pinterest and via FastAPI Using Python</p>
-      <p>Example usage: <a href="https://aiapiviafastapiwithimagebyjonellmagallanes.replit.app/ai?content=hello" onclick="showLoading()">/ai?content=your question
-</a></p>
-                          </div>
+        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">Social Media APIs</div>
 
-  <div class="endpoint-container">
-      <h2>GLOBAL GPT API</h2>
-      <p>This route based on the CHATGPT 3.5 Model AI</p>
-      <p>Example usage: <a href="/api/globalgpt? content=hello" onclick="showLoading()">/api/gloabalgpt?content=your question
-</a></p>
-  </div>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TIKTOK SEARCH API</h2>
+            <p class="text-gray-300 mb-6">Search TikTok videos based on hashtags or specific keywords. Find popular content in seconds!</p>
+            <div class="text-center">
+                <a href="/api/tiktok/searchvideo?keywords=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/tiktok/searchvideo?keywords=
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TIKTOK STALK API</h2>
+            <p class="text-gray-300 mb-6">Explore TikTok users' profiles by their unique IDs. Get details about their videos and activities.</p>
+            <div class="text-center">
+                <a href="/api/tikstalk?unique_id=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/tikstalk?unique_id=
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">INSTAGRAM STALK API</h2>
+            <p class="text-gray-300 mb-6">Access Instagram profiles by username to view photos, videos, and other publicly available information.</p>
+            <div class="text-center">
+                <a href="/api/instagram/stalk?ig=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/instagram/stalk?ig=
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">PINTEREST API</h2>
+            <p class="text-gray-300 mb-6">Search Pinterest images based on a title or keyword to discover creative content.</p>
+            <div class="text-center">
+                <a href="/api/pin?title=wallpaper&count=10" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/pin?title=wallpaper&count=15
+                </a>
+            </div>
+        </div>
+
+        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">AI-Related APIs</div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">GPT API</h2>
+            <p class="text-gray-300 mb-6">Interact with GPT-3.5 for text-based responses. You can ask anything and get intelligent answers.</p>
+            <div class="text-center">
+                <a href="/api/gpt?prompt=hello" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/gpt?prompt=hello
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">AI API</h2>
+            <p class="text-gray-300 mb-6">A simple AI for answering questions. Use it to ask anything and receive responses instantly.</p>
+            <div class="text-center">
+                <a href="/api/ai?query=hi" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/ai?query=hi
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">GLOBAL GPT API</h2>
+            <p class="text-gray-300 mb-6">Access a global version of GPT-3.5 for more advanced interactions and responses.</p>
+            <div class="text-center">
+                <a href="/api/globalgpt?content=hello" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/globalgpt?content=hello
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">LLAMA AI API</h2>
+            <p class="text-gray-300 mb-6">Meta's Llama AI to assist with complex queries via FastAPI in Python.</p>
+            <div class="text-center">
+                <a href="https://apisdashboardzcdsph.onrender.com/meta?prompt=hello" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /meta?prompt=hello
+                </a>
+            </div>
+        </div>
+
+        <div class="text-3xl text-pink-400 text-center uppercase font-semibold mb-10">URL & Image APIs</div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">TINYURL API</h2>
+            <p class="text-gray-300 mb-6">Shorten any URL for easy sharing using the popular TinyURL service.</p>
+            <div class="text-center">
+                <a href="/api/tinyurl?url=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /api/tinyurl?url=
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">LEAVE CARD CANVAS API</h2>
+            <p class="text-gray-300 mb-6">Create a custom leave card for a user who left from a group, with personalized details.</p>
+            <div class="text-center">
+                <a href="https://apisdashboardzcdsph.onrender.com/leave?name=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /leave?name=&id=&background=your background
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">WELCOME CARD CANVAS API</h2>
+            <p class="text-gray-300 mb-6">Generate a welcome card for users who join a group, with customizable background and name.</p>
+            <div class="text-center">
+                <a href="https://apisdashboardzcdsph.onrender.com/?name=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /join2?name=eh&id=&background=your background
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-6 hover:shadow-2xl transform transition-transform duration-300 ease-in-out hover:translate-y-1">
+            <h2 class="text-2xl text-cyan-400 font-medium mb-4">RANKUP CARD CANVAS API</h2>
+            <p class="text-gray-300 mb-6">Create a custom rank-up card showing user rank, progress, and XP.</p>
+            <div class="text-center">
+                <a href="https://apisdashboardzcdsph.onrender.com/rankCard?name=" class="bg-pink-500 text-white px-6 py-2 rounded-md font-bold uppercase transform transition-all duration-300 ease-in-out hover:bg-cyan-500 hover:translate-y-0.5">
+                    Try it: /rankCard?name=cutieee&level=Level20&currentXp=589
+                </a>
+            </div>
+        </div>
+
+        <footer class="bg-gray-800 text-gray-300 text-center py-6 mt-12 rounded-lg">
+            <p>&copy; 2024 ZCDSPH API Dashboard | Created by Marjhun Baylon</p>
+            <p><a href="https://marjhun.fun" class="text-pink-500 hover:text-cyan-400">Visit Website</a></p>
+        </footer>
+
     </div>
 
-  <div class="endpoint-container">
-      <h2>LLAMA AI API</h2>
-      <p>LLAMA AI BY META Can Ask Questions And this is Via FastAPI By Python</p>
-      <p>Example usage: <a href="https://llmaaiviafastapibyjonellmagallanes.replit.app/meta?prompt=hello" onclick="showLoading()">/meta?prompt=your question
-</a></p>
-  </div>
-     <div class="endpoint-container">
-      <h2>LEAVE CARD CANVAS API</h2>
-      <p>This API Leave Card Who left from The Group</p>
-      <p>Example usage: <a href="https://leavecanvasapibyjonell-5715724d201c.herokuapp.com/leave?name=Jonell&id=100036956043695&background=https://i.imgur.com/bMpWUrk.jpeg&count=5" onclick="showLoading()">/leave?name=${first name of user}&id=${event.senderID}&background=${your imgur background link.jpeh&count=${participants.lenght}&</a></p>
-     </div>
-    <div class="endpoint-container">
-      <h2>WELCOME CARD CANVAS API</h2>
-      <p>This API Welcome Card Who Joined from the group</p>
-      <p>Example usage: <a href="https://join2apibyjonell-7b4fde8396f3.herokuapp.com/join2?name=Jonell&id=100036956043695&background=https://i.imgur.com/bMpWUrk.jpeg&count=5" onclick="showLoading()">/join2?name=${FirstnMe}&id=${event.senderID}&background=${your background imgur link.jpeg&count=${participants.length}</a></p>
-    </div>
-     </div>
-    <div class="endpoint-container">
-      <h2>RANKUP CARD CANVAS API</h2>
-      <p>This API Welcome Card Who Joined from the group</p>
-      <p>Example usage: <a href="https://rank2api-5faa0e644e2f.herokuapp.com/rankCard?name=Jonell%20Magallanes&level=Level20&color=auto&facebookSenderId=100036956043695&progress=69&rank=1&currentXp=589&requiredXp=139800&showXp=true" onclick="showLoading()">/rankCard?name=${name of user}&level=Level20&color=auto&facebookSenderId=${event.senderID}&progress=progressRank&rank=rank number&currentXp=expCurrent&requiredXp=expRequire&showXp=true</a></p>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; PROJECT CC JONEL MAGALLANES</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
+
 </html>
