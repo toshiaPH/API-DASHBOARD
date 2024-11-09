@@ -16,11 +16,11 @@ router.get("/edit", async (req, res) => {
     const randomEdit = edits[randomIndex];
 
     const response = await axios.get(
-      `https://cc-project-apis-jonell-magallanes.onrender.com/api/tiktok/searchvideo?keywords=${encodeURIComponent(
+      `https://apisdashboardzcdsph.onrender.com/api/tiktok/searchvideo?keywords=${encodeURIComponent(
         randomEdit,
       )}`,
       {
-        timeout: 5000, // wait for 5 seconds max
+        timeout: 5000, 
       },
     );
 
@@ -41,7 +41,7 @@ router.get("/edit", async (req, res) => {
     }
 
     const message = `Random Memes From TikTok\n\nPost by: ${videoData.author.nickname}\nUsername: ${videoData.author.unique_id}\n\nContent: ${videoData.title}`;
-    // TODO: Send the message variable to the user with attachment
+
 
     const videoUrl = videoData.play;
     const videoResponse = await axios({
